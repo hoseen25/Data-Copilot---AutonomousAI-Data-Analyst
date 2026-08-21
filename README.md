@@ -62,11 +62,10 @@ flowchart TD
     style UI fill:#1e293b,stroke:#0284c7,color:#fff
     style Pydantic fill:#312e81,stroke:#6366f1,color:#fff
 
-                                    ────────────────────────────┘
-
+```
 ## 📂 Project Structure
 
-```
+
 .
 ├── app.py                 # Streamlit UI & Dynamic Media Rendering Engine
 ├── agent_workflow.py      # Agent Core (PydanticAI Agent, Prompts, Tools)
