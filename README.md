@@ -61,4 +61,80 @@ flowchart TD
     style SANDBOX fill:#064e3b,stroke:#34d399,stroke-width:2px,color:#fff
     style UI fill:#1e293b,stroke:#0284c7,color:#fff
     style Pydantic fill:#312e81,stroke:#6366f1,color:#fff
+
+                                    ────────────────────────────┘
+```
+## 📂 Project Structure
+
+```
+.
+├── app.py                 # Streamlit UI & Dynamic Media Rendering Engine
+├── agent_workflow.py      # Agent Core (PydanticAI Agent, Prompts, Tools)
+├── sandbox_driver.py      # Docker Isolation API & Safe Code Execution
+├── requirements.txt       # Python Project Dependencies
+├── .env.example           # Environment Template (API Keys)
+├── .gitignore             # Secrets & Artifact Exclusion Rules
+└── README.md              # Project Documentation
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Domain | Technology | Description |
+| :--- | :--- | :--- |
+| **Agentic Framework** | [PydanticAI](https://ai.pydantic.dev/) | Type-safe agent framework for tool calling, validation, and conversation flow. |
+| **LLM Provider** | [Groq API](https://groq.com/) | Ultra-fast LLaMA model inference engine for rapid code synthesis. |
+| **User Interface** | [Streamlit](https://streamlit.io/) | Interactive chat UI with dynamic artifact rendering. |
+| **Sandbox Environment** | [Docker](https://www.docker.com/) | Isolated containerized execution environment for untrusted python scripts. |
+| **Database** | [PostgreSQL](https://www.postgresql.org/) | Relational data repository targeted for complex SQL queries. |
+| **Data Processing** | Pandas / Matplotlib | Data manipulation, statistical aggregation, and chart plotting. |
+
+---
+
+## 🚀 Quickstart Guide
+
+### Prerequisites
+
+- **Python 3.10+**
+- **Docker Desktop** installed and running
+- **Groq API Key** ([Get your key here](https://console.groq.com/))
+
+### Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/Data-Copilot---Autonomous-AI-Data-Analyst.git
+   cd Data-Copilot---Autonomous-AI-Data-Analyst
+   ```
+
+2. **Set Up Virtual Environment**
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\\Scripts\\activate
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Configure Environment Variables**
+   Create a `.env` file in the project root:
+   ```env
+   GROQ_API_KEY=gsk_your_actual_groq_api_key_here
+   ```
+
+5. **Run the Application**
+   ```bash
+   streamlit run app.py
+   ```
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+
     style Docker fill:#065f46,stroke:#059669,color:#fff
