@@ -64,7 +64,7 @@ flowchart TD
 
 ```
 ## 📂 Project Structure
-
+```
 
 .
 ├── app.py                 # Streamlit UI & Dynamic Media Rendering Engine
@@ -79,6 +79,7 @@ flowchart TD
 ---
 
 ## 🛠️ Tech Stack
+---
 
 | Domain | Technology | Description |
 | :--- | :--- | :--- |
@@ -92,6 +93,7 @@ flowchart TD
 ---
 
 ## 🚀 Quickstart Guide
+---
 
 ### Prerequisites
 
@@ -132,8 +134,9 @@ flowchart TD
 ---
 
 ## 📄 License
-
+---
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+---
 
 
     style Docker fill:#065f46,stroke:#059669,color:#fff
