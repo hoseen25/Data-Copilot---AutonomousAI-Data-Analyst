@@ -63,7 +63,7 @@ flowchart TD
     style Pydantic fill:#312e81,stroke:#6366f1,color:#fff
 
                                     ────────────────────────────┘
-```
+
 ## 📂 Project Structure
 
 ```
