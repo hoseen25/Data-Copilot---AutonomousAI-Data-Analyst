@@ -25,7 +25,43 @@
 
 Data Copilot decouples the user-facing interface, agent reasoning engine, and execution sandbox to maintain maximum security, scalability, and performance.
 
-```
+```mermaid
+flowchart TD
+    %% User Layer
+    subgraph USER [" 💻 USER LAYER "]
+        UI["Streamlit Chat Interface"]
+    end
+
+    %% Agent Engine
+    subgraph AGENT [" 🤖 AGENT ENGINE (PydanticAI) "]
+        Pydantic["PydanticAI Framework"]
+        Tools["Tool Calling (@agent.tool)"]
+        Groq["Groq API (Low-Latency LLM)"]
+    end
+
+    %% Sandbox Execution
+    subgraph SANDBOX [" 🔒 SANDBOX EXECUTION LAYER "]
+        Docker["Docker Sandbox Driver"]
+        DB[(PostgreSQL DB)]
+        Plot["Matplotlib Plot (*.png)"]
+    end
+
+    %% Workflow
+    UI -->|1. Natural Language Query| Pydantic
+    Pydantic --> Tools
+    Pydantic <--> Groq
+    Tools -->|2. Generated Code / SQL| Docker
+    Docker -->|Executes Queries| DB
+    Docker -->|Generates Chart| Plot
+    Plot -->|3. Streamed Chart & Results| UI
+
+    %% Styling
+    style USER fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#fff
+    style AGENT fill:#1e1b4b,stroke:#818cf8,stroke-width:2px,color:#fff
+    style SANDBOX fill:#064e3b,stroke:#34d399,stroke-width:2px,color:#fff
+    style UI fill:#1e293b,stroke:#0284c7,color:#fff
+    style Pydantic fill:#312e81,stroke:#6366f1,color:#fff
+    style Docker fill:#065f46,stroke:#059669,color:#fff
 ┌────────────────────────────────────────────────────────────────────────┐
 │                              USER LAYER                                │
 │                   ┌────────────────────────────────┐                   │
