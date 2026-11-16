@@ -105,7 +105,7 @@ flowchart TD
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/Data-Copilot---Autonomous-AI-Data-Analyst.git
+   git clone https://github.com/YOUR_USERNAME/Data-Copilot---AutonomousAI-Data-Analyst.git
    cd Data-Copilot---Autonomous-AI-Data-Analyst
    ```
 
