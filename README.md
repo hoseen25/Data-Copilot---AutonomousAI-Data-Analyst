@@ -6,7 +6,7 @@
 [![Sandbox](https://img.shields.io/badge/Container-Docker-2496ED.svg)](https://www.docker.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> **Data Copilot** is an enterprise-grade, agentic AI data analyst that bridges natural language and database analytics. It translates free-form user questions into executable Python and SQL scripts, executes them securely within a sandboxed Docker container, and dynamically streams visual insight charts in real-time.
+> **Data Copilot** is an agentic AI data analyst, agentic AI data analyst that bridges natural language and database analytics. It translates free-form user questions into executable Python and SQL scripts, executes them securely within a sandboxed Docker container, and dynamically streams visual insight charts in real-time.
 
 ---
 
@@ -105,8 +105,8 @@ flowchart TD
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/Data-Copilot---AutonomousAI-Data-Analyst.git
-   cd Data-Copilot---Autonomous-AI-Data-Analyst
+   git clone https://github.com/hoseen25/Data-Copilot---AutonomousAI-Data-Analyst.git
+   cd Data-Copilot---AutonomousAI-Data-Analyst
    ```
 
 2. **Set Up Virtual Environment**
